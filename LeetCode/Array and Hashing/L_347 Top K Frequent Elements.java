@@ -1,8 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /* Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
 
@@ -43,3 +39,5 @@ class Solution {
         return result;
     }
 }
+
+
