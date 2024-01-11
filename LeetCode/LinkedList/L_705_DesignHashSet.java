@@ -3,7 +3,8 @@ package LeetCode.LinkedList;
 import java.util.ArrayList;
 import java.util.List;
 
-class MyHashSet {
+class L_705_DesignHashSet
+{
     // HashSet will not have duplicate value
 
     // Approach 1: Use ArrayList for designing HashSet
@@ -34,7 +35,7 @@ class MyHashSet {
 
     List<Boolean> list;
 
-    public MyHashSet() {
+    public L_705_DesignHashSet() {
         list = new ArrayList<>();
         for(int i=0;i <= 1000000;i++){
             list.add(false);
