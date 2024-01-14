@@ -26,4 +26,5 @@ replay_pid*
 
 problem-solving.iml
 LeetCode.iml
-*.out.*
+
+out.*
