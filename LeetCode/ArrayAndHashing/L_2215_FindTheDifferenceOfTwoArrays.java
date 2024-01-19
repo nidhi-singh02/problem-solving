@@ -30,15 +30,10 @@ public class L_2215_FindTheDifferenceOfTwoArrays {
 
         System.out.println("map: "+hashMap);
         List<List<Integer>> answer = new ArrayList<>();
-        hashMap.
 
         answer.add(hashMap.entrySet().stream().filter(e -> e.getValue().equals(0)).map( Map.Entry::getKey).collect(Collectors.toList()));
         answer.add(hashMap.entrySet().stream().filter(e -> e.getValue().equals(1)).map( Map.Entry::getKey).collect(Collectors.toList()));
 
-//        List<Map.Entry<Integer,Integer>> answer1 = hashMap.entrySet().stream().filter(e -> e.getValue().equals(1)).collect(Collectors.toList());
-//
-//        answer.add(answer0.stream().map(e -> e.getKey()).collect(Collectors.toList()));
-//        answer.add(answer1.stream().map(Map.Entry::getKey).collect(Collectors.toList()));
         return  answer;
     }
 }
