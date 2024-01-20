@@ -17,8 +17,6 @@ public class L_1207_UniqueNumberOfOccurrences {
 //        for (int j : arr) {
 //            numbersVisited.put(j, numbersVisited.getOrDefault((j), 0) + 1);
 //        }
-//        System.out.println("numbersVisited: " + numbersVisited);
-//
 //       int c= (int) numbersVisited.values().stream().distinct().count();
 //        return c == numbersVisited.size();
 
