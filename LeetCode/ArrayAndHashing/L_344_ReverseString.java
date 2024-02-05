@@ -23,14 +23,33 @@ public class L_344_ReverseString {
 //        System.out.println("s: "+Arrays.toString(s));
 
         // Approach 2 - O(1) extra memory = In place modify the input array
+//        int start=0;
+//        int end  = s.length-1;
+//       while(start < end){
+//            char temp = s[start];
+//            s[start] = s[end];
+//            s[end] = temp;
+//            start++;
+//            end--;
+//        }
+//
+       // Approach 3 - Recursion
         int start=0;
         int end  = s.length-1;
-       while(start < end){
-            char temp = s[start];
+        recurse(s,start,end);
+
+    }
+
+    private static void recurse(char[] s,int start,int end){
+        // Base condition
+        if(start >= end){
+            return;
+        }
+        char temp = s[start];
             s[start] = s[end];
             s[end] = temp;
             start++;
             end--;
-        }
+            recurse(s,start,end);
     }
 }
